@@ -5,17 +5,15 @@ Modern responsive gym website built with **Docker + Nginx**.
 ## 📸 Homepage Preview
 
 ![Homepage Preview](screenshots/homepage.png)
-A modern responsive gym landing page created as a DevOps practice project and served with Nginx inside a Docker container.
 
 ## ✨ Features
 
 - 🚀 Fully Dockerized Static Website
-- 🌐 Hosted with Nginx
+- 🌐 Nginx Web Server
 - 📱 Responsive Design
 - 🎨 Modern Dark UI
 - ⚡ Fast Static Asset Delivery
 - 🐳 Docker Container Deployment
-
 
 ## 🛠️ Tech Stack
 
@@ -23,7 +21,7 @@ A modern responsive gym landing page created as a DevOps practice project and se
 |------------|---------|
 | Docker | Containerization |
 | Nginx | Static Web Server |
-| HTML5 | Structure |
+| HTML5 | Website Structure |
 | CSS3 | Styling |
 | JavaScript | Animations & Interactions |
 | Linux | Deployment Environment |
@@ -37,8 +35,6 @@ flowchart LR
     C --> D[index.html]
     C --> E[style.css]
     C --> F[script.js]
-
-    B -. Port 8080:80 .-> A
 ```
 
 ## 📂 Project Structure
@@ -58,9 +54,7 @@ dockerized-gym-website/
     └── homepage.png
 ```
 
----
-
-### 🔄 Request Flow
+## 🔄 Request Flow
 
 ```text
 User Browser
@@ -80,57 +74,51 @@ Through this project, I practiced:
 
 - Creating and running Docker containers
 - Building Docker images
-- Port mapping with Docker
+- Docker port mapping
 - Serving a static website using Nginx
 - Working with Docker on RHEL 9
-- Managing files and projects with GitHub
+- Managing projects with GitHub
 - Writing project documentation in Markdown
-- Troubleshooting container and networking issues
-
----
+- Troubleshooting Docker and networking issues
 
 ## 🔧 Troubleshooting
 
-### Container is running but website is not accessible
-
-First, check the running containers:
+### Check Running Containers
 
 ```bash
 docker ps
 ```
 
-Check container logs:
+### Check Container Logs
 
 ```bash
 docker logs gym-website
 ```
 
-Check the mapped port:
+### Check Port Mapping
 
 ```bash
 docker port gym-website
 ```
 
-Test the application locally:
+### Test the Website
 
 ```bash
 curl http://127.0.0.1:8080
 ```
-
----
 
 ## 🚀 Deployment Flow
 
 ```text
 Website Source Code
         ↓
-   Dockerfile
+    Dockerfile
         ↓
-  Docker Image
+   Docker Image
         ↓
  Docker Container
         ↓
-     Nginx
+      Nginx
         ↓
    Port 8080
         ↓
@@ -162,3 +150,17 @@ docker stop gym-website
 ```bash
 docker rm gym-website
 ```
+
+## 🌐 Live Demo
+
+[View Live Website](https://vikaschauhan-devops.github.io/dockerized-gym-website/)
+
+## 📌 Project Highlights
+
+This project demonstrates basic DevOps workflow including:
+
+- Containerization with Docker
+- Nginx web server deployment
+- Linux-based troubleshooting
+- GitHub repository management
+- GitHub Pages deployment
