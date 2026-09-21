@@ -41,19 +41,6 @@ flowchart LR
     B -. Port 8080:80 .-> A
 ```
 
-### Request Flow
-
-```text
-User Browser
-     ↓
-localhost:8080
-     ↓
-Docker Container
-     ↓
-Nginx :80
-     ↓
-HTML / CSS / JavaScript
-```
 ## 📂 Project Structure
 
 ```text
@@ -72,6 +59,20 @@ dockerized-gym-website/
 ```
 
 ---
+
+### 🔄 Request Flow
+
+```text
+User Browser
+     ↓
+localhost:8080
+     ↓
+Docker Container
+     ↓
+Nginx :80
+     ↓
+HTML / CSS / JavaScript
+```
 
 ## 🧠 What I Learned
 
