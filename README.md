@@ -1,6 +1,12 @@
-# FORGEFIT - Dockerized Gym Website
+# 🏋️ Dockerized Gym Website
 
+Modern responsive gym website built with **Docker + Nginx**.
+
+## 📸 Homepage Preview
+
+![Homepage Preview](screenshots/homepage.png)
 A modern responsive gym landing page created as a DevOps practice project and served with Nginx inside a Docker container.
+
 
 ## Features
 
