@@ -28,6 +28,32 @@ A modern responsive gym landing page created as a DevOps practice project and se
 | JavaScript | Animations & Interactions |
 | Linux | Deployment Environment |
 
+## 🏗️ Architecture
+
+```mermaid
+flowchart LR
+    A[🌐 User Browser] --> B[🐳 Docker Container]
+    B --> C[⚙️ Nginx]
+    C --> D[index.html]
+    C --> E[style.css]
+    C --> F[script.js]
+
+    B -. Port 8080:80 .-> A
+```
+
+### Request Flow
+
+```text
+User Browser
+     ↓
+localhost:8080
+     ↓
+Docker Container
+     ↓
+Nginx :80
+     ↓
+HTML / CSS / JavaScript
+```
 
 ## 🐳 Run Locally with Docker
 
